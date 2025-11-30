@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Placer</title>
+    <link rel="icon" type="image/png" href="rosie.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <img src="rosie.png" alt="Rosie" class="header-logo">
+                <div class="header-text">
+                    <h2>Poster Placer</h2>
+                    <p class="subtitle">Rosie says, We Can Do It! [put the fitted sheet on the bed]</p>
+                </div>
+            </div>
+            <p class="credit">☆ Posters placed by <a href="#" target="_blank">agduan</a></p>
+            <div class="upload-section">
+                <input type="file" id="fileInput" accept="image/*" multiple>
+                <label for="fileInput" class="upload-button">Upload Images</label>
+                <button id="placeAllBtn" class="upload-button">Place All</button>
+                <button id="resizeCanvasBtn" class="secondary-button">Resize Canvas</button>
+                <div id="currentSize" class="current-size">Current: — in × — in<br>&emsp;&emsp;&emsp;&ensp;(— ft × — ft)</div>
+                <label class="toggle-label">
+                    <input type="checkbox" id="showLabelsToggle" checked>
+                    Show labels
+                </label>
+                <label class="toggle-label">
+                    <input type="checkbox" id="showHandlesToggle" checked>
+                    Show resizers (the squares)
+                </label>
+                <label class="toggle-label">
+                    <input type="checkbox" id="snapToPosterToggle">
+                    Snap to poster size
+                    <span 
+                    class="info-icon"
+                    title="Snap all images to common sizes
+• Photos: 4×6, 5×7, 8×10
+• Posters: 11×14, 12×18, 16×20, 18×24, 20×30, 24×36
+• Documents: 8.5×11"
+                  >ⓘ</span>
+                  
+                </label>
+                <div class="preset-section">
+                    <label class="preset-label">Select wall guide:</label>
+                    <select id="wallPreset" class="preset-select">
+                        <option value="none">None</option>
+                        <option value="dorm">Dorm (80" × 40")</option>
+                    </select>
+                    <span id="moveOutOfGuide" class="text-link">Move images out of guide</span>
+                </div>
+                <div class="preset-section">
+                    <label class="preset-label">Add poster block:</label>
+                    <div class="block-buttons">
+                        <button id="add18x24" class="block-button">18" × 24"</button>
+                        <button id="add24x36" class="block-button">24" × 36"</button>
+                    </div>
+                </div>
+                <span id="clearCanvasBtn" class="text-link">Clear canvas</span>
+                <span id="removeUploadedBtn" class="text-link">Remove all uploaded images :(</span>
+            </div>
+            <div id="imageList" class="image-list"></div>
+            <p class="copyright">© 2025 Alexandra Duan</p>
+        </div>
+        <div class="main-area" id="mainArea">
+            <div class="placeholder">
+                Click on an image from the sidebar to add it here
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
