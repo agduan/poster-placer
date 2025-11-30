@@ -5,6 +5,8 @@ This is a web app for planning poster arrangements on your wall. All changes are
 ![Default Layout](default-layout.png)
 *The default layout of the [website](agduan.github.io/poster-placer). Wait a few seconds for the site to load.*
 
+**Why make this instead of using Photoshop?** The site (1) calculates all images' maximum poster sizes and displays them relative to each other, (2) visually indicates if you've expanded an image beyond its max size, (3) lets you snap all images to standard poster sizes, and (4) includes a dorm wall rectangle guide.
+
 ## How to Use
 
 1. **Add images.** Click any image in the sidebar to place it on the canvas, or click "Upload Images" to add your own.
