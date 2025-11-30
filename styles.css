@@ -163,8 +163,11 @@ body {
 
 .credit {
     font-size: 13px;
-    color: #666;
+    color: #555;
     margin: 0 0 20px 0;
+    background: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 6px;
 }
 
 .credit a {
